@@ -1,8 +1,41 @@
+/*Variables Globales CSS colores*/
+:root{
+    --Blue:#0A3871;/*Color tomado del modelo figma*/
+}
+/*Selector universal*/
 *{
+    /*Elimina margen y rellenos predeterminados*/
     margin: 0;
     padding: 0;
 }
-main{
+/*---Encabezado---*/
+header{
     display: flex;
     flex-direction: row;
+    position: absolute;
+    margin: 40px 0px 0px 40px;
+    gap: 30px;
+}
+/*---Principal---*/
+/*Selecciona el elemento main*/
+main{
+    display: flex;/*Permite que los elementos secundarios se alineen*/
+    flex-direction: row;/*Organiza los elementos en una fila horizontal*/
+}
+.sectionUno{
+    width: 55%;/*Establece el ancho de la sección*/
+    margin: 108px 0px 0px 100px;
+    background: transparent;
+}
+/*---text-area---*/
+.encriptar{
+    width: 600px;/*Establece el ancho del elemento text-area*/
+    height: 260px;/*Establece el alto del elemento text-area*/
+    font-weight: 400;/* Define el grosor del texto*/
+    font-size: 32px;/* Establece el tamaño de la fuente*/
+    line-height: 38px;/* Define el espacio vertical entre líneas de texto */
+    outline: none;/* Elimina el contorno que aparece por defecto al hacer clic en el <textarea> */
+    border: 1px solid var(--Blue);
+    border-radius: 15px;
+    resize: none;/* Impide que el usuario pueda redimensionar el <textarea> */
 }
