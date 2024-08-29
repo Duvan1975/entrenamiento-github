@@ -1,12 +1,23 @@
 /*Variables Globales CSS colores*/
 :root{
-    --Blue:#0A3871;/*Color tomado del modelo figma*/
+    /*Colores tomados del modelo figma*/
+    --Blue:#0A3871;
+    --Gray:#495057;
+    --White:#FFFFFF;
+    --Dark-Blue:#0A3871;
+    --RGBA:rgba(0,0,0,0.08);
 }
 /*Selector universal*/
 *{
     /*Elimina margen y rellenos predeterminados*/
     margin: 0;
     padding: 0;
+}
+body{
+    height: 100%;/*Asegura que ocupe toda la altura disponible*/
+}
+img{
+    max-width: 100%;/*Hace que las imágenes sean responsivas*/
 }
 /*---Encabezado---*/
 header{
@@ -21,6 +32,7 @@ header{
 main{
     display: flex;/*Permite que los elementos secundarios se alineen*/
     flex-direction: row;/*Organiza los elementos en una fila horizontal*/
+    background: url(../imagenes/portada.png)no-repeat;
 }
 .sectionUno{
     width: 55%;/*Establece el ancho de la sección*/
@@ -38,4 +50,56 @@ main{
     border: 1px solid var(--Blue);
     border-radius: 15px;
     resize: none;/* Impide que el usuario pueda redimensionar el <textarea> */
+}
+.encriptar::placeholder,:focus{
+    color: var(--Blue);
+}
+/*---Elementos dentro del <div> img class "icono-aviso y p class "texto-aviso"*/
+.encriptador-aviso{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    gap: 4px;
+    position: absolute;
+    top: 400px;
+}
+.texto-aviso{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    opacity: 0.8;
+    color: var(--Gray);
+}
+/*Elementos dentro del <div> botones encriptar y desencriptar*/
+.encriptador-botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background: transparent;
+    gap: 4px;
+    position: absolute;
+    top: 450px;
+}
+.btn-encriptar{
+    width: 298px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--White);
+    background: var(--Dark-Blue);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px --5px var(--RGBA);
+}
+.btn-encriptar:active{
+    box-shadow: inset 2px 2px 5px var(--White);
+    /*inset -3px -4px 8px var(--Dark-Blue);
+    color: var(--White);*/
 }
