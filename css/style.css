@@ -6,6 +6,7 @@
     --White:#FFFFFF;
     --Dark-Blue:#0A3871;
     --RGBA:rgba(0,0,0,0.08);
+    --White-Gray:#D8DFE8;
 }
 /*Selector universal*/
 *{
@@ -87,7 +88,7 @@ main{
     height: 67px;
     padding: 24px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
@@ -99,7 +100,32 @@ main{
     box-shadow: 0px 20px 29px --5px var(--RGBA);
 }
 .btn-encriptar:active{
-    box-shadow: inset 2px 2px 5px var(--White);
-    /*inset -3px -4px 8px var(--Dark-Blue);
-    color: var(--White);*/
+    box-shadow: inset 2px 2px 5px var(--White),
+    inset -3px -4px 8px var(--Blue);
+    color: var(--White);
+}
+.btn-desencriptar{
+    width: 298px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Dark-Blue);
+    background: var(--White-Gray);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px --5px var(--RGBA);
+}
+.btn-desencriptar:active{
+    box-shadow: inset 2px 2px 5px var(--Dark-Blue),
+    inset -3px -4px 8px var(--White);
+    color: var(--Dark-Blue);
+}
+.btn-encriptar:hover,
+.btn-desencriptar:hover{
+    transform: scale(0.95);/*Reduce a escala los botones al pasar el cursor sobre cada uno de ellos*/
 }
