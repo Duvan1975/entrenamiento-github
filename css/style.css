@@ -1,18 +1,25 @@
+/*Importanto estilo de fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /*Variables Globales CSS colores*/
 :root{
     /*Colores tomados del modelo figma*/
     --Blue:#0A3871;
     --Gray:#495057;
     --White:#FFFFFF;
+    --Greey: #C5C5C5;
     --Dark-Blue:#0A3871;
     --RGBA:rgba(0,0,0,0.08);
     --White-Gray:#D8DFE8;
+    --Dark-Gray:#343A40;
 }
 /*Selector universal*/
 *{
     /*Elimina margen y rellenos predeterminados*/
     margin: 0;
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
 }
 body{
     height: 100%;/*Asegura que ocupe toda la altura disponible*/
@@ -36,7 +43,7 @@ main{
     background: url(../imagenes/portada.png)no-repeat;
 }
 .sectionUno{
-    width: 55%;/*Establece el ancho de la sección*/
+    width: 50%;/*Establece el ancho de la sección*/
     margin: 108px 0px 0px 100px;
     background: transparent;
 }
@@ -99,7 +106,9 @@ main{
     cursor: pointer;
     box-shadow: 0px 20px 29px --5px var(--RGBA);
 }
+/*Creando efecto visual al botón*/
 .btn-encriptar:active{
+    /*box-shadow aplica sombras internas al dar clic en el botón*/
     box-shadow: inset 2px 2px 5px var(--White),
     inset -3px -4px 8px var(--Blue);
     color: var(--White);
@@ -124,6 +133,55 @@ main{
     box-shadow: inset 2px 2px 5px var(--Dark-Blue),
     inset -3px -4px 8px var(--White);
     color: var(--Dark-Blue);
+}
+.sectionDos{
+    width: 410px;/*Ajusta el ancho del elemento*/
+    height: 510px;/*Ajusta el alto del elemento*/
+    background: var(--Greey);
+    box-shadow: 10px 24px 32px 2px var(--Gray);
+    position: relative;
+    margin-top: 50px;
+    border-radius: 32px;
+    text-align: center;
+}
+.tarjeta{
+    width: 336px;
+    height: 222px;
+    margin-top: 25px;
+    align-items: center;
+    background: var(--Greey);
+}
+.texto-uno{
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--Dark-Gray);
+}
+.texto-dos{
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: var(--Gray);
+}
+.tarjeta-mensaje{
+    width: 366px;/*Ajusta el ancho del elemento*/
+    height: 385px;/*Ajusta el alto del elemento*/
+    position: absolute;
+    padding: 5%;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--Greey);
+    background: transparent;
+    border-top-right-radius: 32px;
+    border-top-left-radius: 32px;
+    border: none;
+    resize: none;
 }
 .btn-encriptar:hover,
 .btn-desencriptar:hover{
