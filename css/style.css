@@ -21,6 +21,10 @@
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
+::selection{
+    background: var(--Dark-Blue);
+    color: var(--white);
+}
 body{
     height: 100%;/*Asegura que ocupe toda la altura disponible*/
 }
@@ -41,6 +45,9 @@ main{
     display: flex;/*Permite que los elementos secundarios se alineen*/
     flex-direction: row;/*Organiza los elementos en una fila horizontal*/
     background: url(../imagenes/portada.png)no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 .sectionUno{
     width: 50%;/*Establece el ancho de la sección*/
@@ -177,7 +184,7 @@ main{
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    color: var(--Greey);
+    color: var(--Dark-Blue);
     background: transparent;
     border-top-right-radius: 32px;
     border-top-left-radius: 32px;

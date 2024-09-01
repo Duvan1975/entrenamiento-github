@@ -23,8 +23,8 @@
                 <p class="texto-aviso">Solo letras minúsculas sin acentos.</p>
             </div>
             <div class="encriptador-botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <button class="btn-encriptar" onclick="btnEncriptar()" >Encriptar</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()" >Desencriptar</button>
             </div>
         </section>
         <section class="sectionDos">
@@ -35,7 +35,7 @@
             </div>
             <textarea class="tarjeta-mensaje" type="mensaje" readonly></textarea>
             <div class="tarjeta-boton">
-                <button class="btn-copiar">Copiar</button>
+                <button class="btn-copiar" onclick="btnCopiar()" >Copiar</button>
             </div>
         </section>
     </main>
@@ -48,5 +48,6 @@
             <img class="linked" src="./imagenes/linkedin.svg" alt="Icono de LinkedIn">
         </a>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 </html>
