@@ -211,3 +211,19 @@ main{
 .btn-desencriptar:hover{
     transform: scale(0.95);/*Reduce a escala los botones al pasar el cursor sobre cada uno de ellos*/
 }
+/*-----Pie de página-----*/
+footer{
+    display: flex;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    background: var(--White-Gray);
+}
+.github:hover{
+    color: var(--Greey);
+    opacity: 0.6;
+}
+.linked:hover{
+    color: var(--Greey);
+    opacity: 0.7;
+}
