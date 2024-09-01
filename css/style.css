@@ -129,6 +129,7 @@ main{
     cursor: pointer;
     box-shadow: 0px 20px 29px --5px var(--RGBA);
 }
+.btn-copiar:active,
 .btn-desencriptar:active{
     box-shadow: inset 2px 2px 5px var(--Dark-Blue),
     inset -3px -4px 8px var(--White);
@@ -145,9 +146,9 @@ main{
     text-align: center;
 }
 .tarjeta{
-    width: 336px;
-    height: 222px;
-    margin-top: 25px;
+    display: contents;
+    margin-top: 35px;
+    justify-content: center;
     align-items: center;
     background: var(--Greey);
 }
@@ -168,7 +169,7 @@ main{
 }
 .tarjeta-mensaje{
     width: 366px;/*Ajusta el ancho del elemento*/
-    height: 385px;/*Ajusta el alto del elemento*/
+    height: 315px;/*Ajusta el alto del elemento*/
     position: absolute;
     padding: 5%;
     top: 0;
@@ -183,6 +184,29 @@ main{
     border: none;
     resize: none;
 }
+.tarjeta-boton{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.btn-copiar{
+    width: 173px;
+    height: 67px;
+    padding: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--Dark-Blue);
+    background: var(--White-Gray);
+    border: 1px solid var(--Dark-Blue);
+    border-radius: 24px;
+    cursor: pointer;
+    box-shadow: 0px 20px 29px --5px var(--RGBA);
+
+}
+.btn-copiar:hover,
 .btn-encriptar:hover,
 .btn-desencriptar:hover{
     transform: scale(0.95);/*Reduce a escala los botones al pasar el cursor sobre cada uno de ellos*/
