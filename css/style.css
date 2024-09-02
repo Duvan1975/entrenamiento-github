@@ -190,6 +190,7 @@ main{
     border-top-left-radius: 32px;
     border: none;
     resize: none;
+    outline: none;
 }
 .tarjeta-boton{
     display: flex;
